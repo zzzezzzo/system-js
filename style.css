@@ -6,7 +6,8 @@
 body{
     direction: rtl;   
     background: linear-gradient(rgb(0, 187, 201) ,rgb(0, 9, 88));
-    /* height: 100vh; */
+    height: 100vh;
+    background-attachment: fixed;
 }
 #container{
     max-width: 80%;
