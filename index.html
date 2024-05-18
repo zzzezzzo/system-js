@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CURDS</title>
+</head>
+
+<body>
+    <div id="container">
+        <div class="head">
+            <h1>أدارة المخازن</h1>
+            <p>اضافة المنتاجات اليومية</p>
+        </div>
+        <div class="inputData">
+            <input type="text" id="title" placeholder="ادخل اسم المنتج">
+            <div class="price_total">
+                <input onkeyup="totalPrice()" type="number" id="price" placeholder="ادخل السعر ">
+                <input onkeyup="totalPrice()" type="number" id="count" placeholder="ادخل الكمية">
+                <small id="total"></small>
+            </div>
+            <button id="create_btn">اضافة</button>
+            <input type="text" onkeyup="showData()" id="search" placeholder="البحث">
+            <button id="search_btn" onclick="searchData()">بحث</button>
+        </div>
+        <div class="outputData">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>اسم المنتج</th>
+                        <th>سعر العبوة</th>
+                        <th>الكمية</th>
+                        <th>المجموع</th>
+                        <th>التعديل</th>
+                        <th>حذف</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
